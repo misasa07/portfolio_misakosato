@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block content %}
+</div>
+</div>
+</nav>
+</header>
+
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="./static/assets/images/fifa19.png" class="img-responsive" alt="">
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">003 : Which soccer player is a good deal? </h1>
+          </div>
+          <p>Scenario: You are working with a soccer team. Your manager asked to find out which players are good deal in the
+            market right now.
+            In other words, we want to know which players are getting less paid than their market values.
+          </p>
+          <p>Data Source:
+          
+            <a href="https://www.kaggle.com/karangadiya/fifa19">Kaggle FIFA 19 complete player datase</a>
+          </p>
+          
+        </div>
+      </div>
+
+      
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="./static/assets/images/get_data.png" class="img-responsive" alt="">
+            <div class="text-center">
+            <p>Ste1) Imoprt the Dataset (89 cols & 18207 rows) in Jupyter Notebook</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="./static/assets/images/clean_data.png" class="img-responsive" alt="">
+            <div class="text-center">
+            <p>Step2) Clean Data by showing only Columns of Name, Wage, Value, and Difference between the Wage and the Value.
+                Remove '€' and replaced 'K', 'M', 'B' with 1000, 1000000, 1000000000 to calculate each Difference.
+            </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="./static/assets/images/visualize_data.png" class="img-responsive" alt="">
+            <img src="./static/assets/images/plotting.png" class="img-responsive" alt="">
+            <div class="text-center">
+            <p>Step3) Visualize Data with a graph. 'Bokeh' library is used. From the above, Naymar Jr player has the biggest gap between his wage(€29M) and his market value (€118.5M) in 2019.
+
+            </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      
+
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
